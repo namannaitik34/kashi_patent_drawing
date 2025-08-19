@@ -37,11 +37,11 @@ const Why = () => {
                         <div className="grid grid-cols-1 md:grid-cols-1 gap-8 w-full overflow-visible">
                             <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col gap-2 border-t-4 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer overflow-visible" style={{borderTopColor: '#FDECD3'}}>
                                     <h5 className="font-semibold text-lg mb-1">Budget-friendly Prices or We Match</h5>
-                                    <p className="text-bluegray text-base">Find lower prices for patent drawings? We'll match them to ensure the best value.</p>
+                                    <p className="text-bluegray text-base">Find lower prices for patent drawings? We&apos;ll match them to ensure the best value.</p>
                             </div>
                                 <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col gap-2 border-t-4 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer overflow-visible" style={{borderTopColor: '#FDECD3'}}>
                                     <h5 className="font-semibold text-lg mb-1">100% Satisfaction Guarantee</h5>
-                                    <p className="text-bluegray text-base">Unlimited revisions at no extra cost. Complete satisfaction or you don’t pay.</p>
+                                    <p className="text-bluegray text-base">Unlimited revisions at no extra cost. Complete satisfaction or you don&apos;t pay.</p>
                             </div>
                                 <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col gap-2 border-t-4 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer overflow-visible" style={{borderTopColor: '#FDECD3'}}>
                                     <h5 className="font-semibold text-lg mb-1">Most Flexible Output Formats</h5>
