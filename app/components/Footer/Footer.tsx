@@ -24,7 +24,7 @@ const footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         {/* Logo & Tagline */}
         <div className="flex flex-col items-start">
-          <img src="/assets/logo/logo.png" alt="Company Logo" className="h-14 mb-4" />
+          <Image src="/assets/logo/logo.png" alt="Company Logo" width={56} height={56} className="h-14 mb-4" />
           <span className="text-lg font-semibold mb-2">Let’s Make Magic Together ✨</span>
           <div className="flex gap-4 mt-2">
             <Link href="https://facebook.com" className="hover:scale-110 transition-transform">

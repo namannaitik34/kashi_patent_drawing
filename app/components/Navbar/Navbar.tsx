@@ -1,6 +1,7 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import Image from "next/image";
 import React, { useState } from "react";
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
@@ -38,7 +39,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link href="/#home" className="flex items-center gap-2" onClick={() => handleNavClick("Home") }>
-          <img src="/assets/logo/logo.png" alt="Logo" className="h-12 w-auto" />
+          <Image src="/assets/logo/logo.png" alt="Logo" width={48} height={48} className="h-12 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}
