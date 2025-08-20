@@ -52,7 +52,7 @@ const Clientsay = () => {
         return () => clearInterval(interval);
     }, []);
     return (
-        <section className="mx-auto max-w-6xl py-16 px-8 sm:px-16 lg:px-32">
+    <section className="mx-auto max-w-6xl py-10 px-2 sm:px-8 lg:px-32">
             <div className="text-center mb-10">
                 <h3 className="text-navyblue text-4xl lg:text-5xl font-bold mb-2">What Our Clients Say</h3>
                 <p className="text-lg text-darkgray">Real feedback from innovators, attorneys, and businesses who trust Kashi Patent.</p>
@@ -79,7 +79,7 @@ const Clientsay = () => {
                     style={{scrollSnapType: 'x mandatory'}}
                 >
                     {testimonials.map((t, idx) => (
-                        <div key={idx} className="min-w-[320px] max-w-sm flex-shrink-0 bg-white rounded-2xl shadow-md p-8 flex flex-col items-center cursor-pointer hover:scale-105 transition-transform duration-300" style={{scrollSnapAlign: 'start'}}>
+                        <div key={idx} className="w-full min-w-[160px] max-w-[90vw] sm:min-w-[280px] sm:max-w-sm flex-shrink-0 bg-white rounded-2xl shadow-md p-4 flex flex-col items-center cursor-pointer hover:scale-105 transition-transform duration-300" style={{scrollSnapAlign: 'start'}}>
                             <Image src={t.img} alt="user-image" width={96} height={96} className="rounded-full mb-4" />
                             <p className="text-base text-center text-darkgray mb-4">{t.text}</p>
                             <h3 className="text-xl font-semibold text-navyblue">{t.name}</h3>
