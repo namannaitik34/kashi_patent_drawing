@@ -42,6 +42,15 @@ const Navbar = () => {
           <Image src="/assets/logo/logo.png" alt="Company Logo" width={196} height={56} className="h-14 mb-4" />
         </Link>
 
+        {/* Hamburger for Mobile */}
+        <button
+          className="lg:hidden flex items-center justify-center p-2 rounded-md text-black hover:bg-gray-100 transition-all duration-300"
+          onClick={() => setIsOpen(true)}
+          aria-label="Open menu"
+        >
+          <Bars3Icon className="h-8 w-8" />
+        </button>
+
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center gap-4">
           {navigation.map((item) => (
@@ -83,7 +92,7 @@ const Navbar = () => {
 
       {/* Contact Modal */}
       {isContactOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 transition-opacity duration-300">
           <div className="relative">
             <ContactForm onClose={() => setIsContactOpen(false)} />
           </div>

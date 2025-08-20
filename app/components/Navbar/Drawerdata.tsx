@@ -8,10 +8,10 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: 'Home', href: '/', current: true },
-  { name: 'Services', href: '#services', current: false },
-  { name: 'About', href: '#about', current: false },
-  { name: 'Project', href: '#', current: false },
+  { name: "Home", href: "/#home", current: true },
+  { name: "Project", href: "/#project", current: false },
+  { name: "Services", href: "#services", current: false },
+  { name: "About", href: "/#why", current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -30,7 +30,7 @@ const Data = () => {
                 href={item.href}
                 className={classNames(
                   item.current ? 'text-black hover:opacity-100' : 'hover:text-black hover:opacity-100',
-                  'px-2 py-1 text-lg font-normal opacity-75 block'
+                  'px-2 py-1 text-lg font-normal opacity-75 block transition-all duration-300'
                 )}
                 aria-current={item.current ? 'page' : undefined}
               >
