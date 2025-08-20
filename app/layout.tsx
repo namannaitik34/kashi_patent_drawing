@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/index';
 import Footer from './components/Footer/Footer';
 import Offer from './components/Offer/Offer';
 import WhatsAppFloating from './components/WhatsAppFloating';
+import ChatBotFloating from './components/ChatBotFloating';
 
 
 export const metadata = {
@@ -22,8 +23,9 @@ export default function RootLayout({
         <main>
           {children}
         </main>
-        <Footer />
-        <WhatsAppFloating />
+  <Footer />
+  <WhatsAppFloating />
+  <ChatBotFloating />
       </body>
     </html>
   )

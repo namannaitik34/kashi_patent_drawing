@@ -11,9 +11,9 @@ const WhatsAppFloating = () => {
   }, []);
 
   return (
-  <div className="fixed bottom-8 right-8 z-50 flex flex-col items-end">
+  <div className="fixed bottom-8 right-8 z-50 flex flex-row items-end">
       {showTooltip && (
-        <div className="mb-2 px-4 py-2 bg-[#128C7E] rounded-lg shadow-lg text-base font-medium animate-fade-in text-white">
+        <div className="mr-4 px-4 py-2 bg-[#128C7E] rounded-lg shadow-lg text-base font-medium animate-fade-in text-white">
           Got a query? Contact now
         </div>
       )}
