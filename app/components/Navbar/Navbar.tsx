@@ -16,9 +16,9 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { name: "Home", href: "/#home", current: true },
-  { name: "Project", href: "#companies", current: false },
+  { name: "Project", href: "/#project", current: false },
   { name: "Services", href: "#services", current: false },
-  { name: "About", href: "#about", current: false },
+  { name: "About", href: "/#why", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -39,7 +39,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link href="/#home" className="flex items-center gap-2" onClick={() => handleNavClick("Home") }>
-          <Image src="/assets/logo/logo.png" alt="Logo" width={48} height={48} className="h-12 w-auto" />
+          <Image src="/assets/logo/logo.png" alt="Company Logo" width={196} height={56} className="h-14 mb-4" />
         </Link>
 
         {/* Desktop Navigation */}

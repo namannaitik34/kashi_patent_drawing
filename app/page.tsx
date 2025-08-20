@@ -14,29 +14,29 @@ export default function Home() {
   return (
     <main className="bg-gradient-to-br from-blue-50 via-white to-purple-50 min-h-screen w-full">
       <div className="container mx-auto px-4 py-8 max-w-6xl">
-        <section className="mb-12">
+        <section id="home" className="mb-12 scroll-mt-32">
           <Banner />
         </section>
-  <TextCarousel id="about" />
-        <section className="mb-12">
+        <section id="project" className="mb-12 scroll-mt-32">
+          <TextCarousel />
           <Companies />
         </section>
-        {/* <section className="mb-12">
+        {<section id="buyers" className="mb-12 scroll-mt-32">
           <Buyers />
-        </section> */}
-        <section className="mb-12">
+        </section>}
+        <section id="services" className="mb-12 scroll-mt-32">
           <Provide />
         </section>
-        <section className="mb-12">
+        <section id="why" className="mb-12 scroll-mt-32">
           <Why />
         </section>
-        <section className="mb-12">
+        <section id="network" className="mb-12 scroll-mt-32">
           <Network />
         </section>
-        <section className="mb-12">
+        <section id="clientsay" className="mb-12 scroll-mt-32">
           <Clientsay />
         </section>
-        <section className="mb-12">
+        <section id="faq" className="mb-12 scroll-mt-32">
           <HowItWorksFAQ />
         </section>
         <section className="mb-12">

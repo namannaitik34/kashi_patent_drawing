@@ -83,36 +83,37 @@ export default function HowItWorksFAQ() {
             </div>
           ))}
         </div>
-        <h2 className="text-3xl font-bold text-center text-blue-900 mb-6">Frequently Asked Questions</h2>
-        <div className="bg-white rounded-2xl shadow-lg p-8 max-w-3xl mx-auto">
+        <h2 className="text-3xl font-bold text-center text-blue-900 mb-8">Frequently Asked Questions</h2>
+        <div className="max-w-2xl mx-auto">
           {faqs.map((faq, idx) => (
-            <div key={idx}>
+            <div key={idx} className="mb-6">
               <button
-                className="w-full border-b border-blue-100 py-4 flex items-center justify-between cursor-pointer hover:bg-blue-50 transition text-left"
+                className="w-full flex items-center justify-between px-6 py-5 text-left bg-white rounded-xl shadow hover:shadow-lg transition-all duration-300 focus:outline-none"
                 onClick={() => setOpenIdx(openIdx === idx ? null : idx)}
                 aria-expanded={openIdx === idx}
               >
-                <span className="text-lg text-bluegray">{faq.question}</span>
-                <span className={`text-2xl text-blue-400 font-bold transition-transform duration-200 ${openIdx === idx ? 'rotate-45' : ''}`}>+</span>
+                <span className="text-lg font-semibold text-navyblue">{faq.question}</span>
+                <svg className={`ml-4 w-6 h-6 text-blue-500 transform transition-transform duration-300 ${openIdx === idx ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
               </button>
-              {openIdx === idx && (
-                <div className="py-2 px-2 text-blue-700 bg-blue-50 rounded-lg mb-2 animate-fade-in">
-                  {faq.answer}
-                </div>
-              )}
+              <div
+                className={`overflow-hidden transition-all duration-500 ${openIdx === idx ? 'max-h-40 py-4 px-6 bg-blue-50 border border-blue-100' : 'max-h-0 py-0 px-6'}`}
+                style={{ borderRadius: openIdx === idx ? '0 0 0.75rem 0.75rem' : '0 0 0.75rem 0.75rem' }}
+              >
+                <p className="text-bluegray text-base animate-fade-in">{faq.answer}</p>
+              </div>
             </div>
           ))}
         </div>
+        <style jsx>{`
+          .animate-fade-in {
+            animation: fadeIn 0.3s;
+          }
+          @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+          }
+        `}</style>
       </div>
-      <style jsx>{`
-        .animate-fade-in {
-          animation: fadeIn 0.3s;
-        }
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(-5px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-      `}</style>
     </div>
   );
 }

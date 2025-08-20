@@ -83,7 +83,7 @@ const Banner = () => {
             </button>
             <button
               type="button"
-              onClick={() => window.location.href = '#quote'}
+              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSflV2X20nFmAorml5ERycxCgYRpV6K1TImuJAFBpBFhxuUUEg/viewform?usp=header', '_blank')}
               className="text-15px text-white font-medium bg-blue py-5 px-9 mt-2 ml-4 leafbutton"
             >
               Request a Quote

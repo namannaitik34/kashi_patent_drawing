@@ -30,7 +30,7 @@ const services = [
 const Provide = () => {
     return (
 
-        <section className="w-full py-20 px-2 md:px-8 bg-gradient-to-br from-blue-50 via-white to-purple-50">
+    <section id="services" className="w-full py-20 px-2 md:px-8 bg-gradient-to-br from-blue-50 via-white to-purple-50 scroll-mt-32">
             <div className="max-w-7xl mx-auto">
                 {/* Hero Section */}
                 <div className="mb-14 flex flex-col md:flex-row items-center gap-10 bg-white rounded-3xl shadow-xl p-10 border border-bluegray">
@@ -51,7 +51,6 @@ const Provide = () => {
 
                 {/* Features Stepper */}
                 <div className="mb-16">
-                    <h2 className="text-4xl lg:text-5xl font-bold text-center mb-10 text-navyblue">Why Choose Us?</h2>
                     <div className="flex flex-col md:flex-row items-center justify-center gap-8">
                         {[
                             { label: "Flat Fee", desc: "No hidden costs, regardless of complexity." },
@@ -60,7 +59,7 @@ const Provide = () => {
                             { label: "Fast Delivery", desc: "Quick turnaround, simple ordering." }
                         ].map((step, idx) => (
                             <div key={idx} className="flex flex-col items-center group">
-                                <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-3 group-hover:bg-blue-500 transition-all duration-300 shadow-md">
+                                <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-3 group-hover:bg-black transition-all duration-300 shadow-md cursor-pointer">
                                     <span className="text-2xl font-bold text-blue-700 group-hover:text-white">{idx + 1}</span>
                                 </div>
                                 <span className="font-semibold text-lg text-navyblue mb-1">{step.label}</span>
@@ -82,7 +81,9 @@ const Provide = () => {
                             </div>
                             <h3 className="text-2xl font-bold text-navyblue mb-2 text-center group-hover:text-blue-600 transition-all duration-300">{item.title}</h3>
                             <p className="text-base text-bluegray text-center mb-6">{item.desc}</p>
-                            <button className="bg-blue-500 text-white px-6 py-3 rounded-xl font-semibold shadow-lg transition-all duration-300 hover:bg-blue-600 hover:scale-105 hover:shadow-xl">{item.price}</button>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSflV2X20nFmAorml5ERycxCgYRpV6K1TImuJAFBpBFhxuUUEg/viewform?usp=header" target="_blank" rel="noopener noreferrer">
+                                <button className="bg-blue-500 text-white px-6 py-3 rounded-xl font-semibold shadow-lg transition-all duration-300 hover:bg-blue-600 hover:scale-105 hover:shadow-xl">{item.price}</button>
+                            </a>
                         </div>
                     ))}
                 </div>

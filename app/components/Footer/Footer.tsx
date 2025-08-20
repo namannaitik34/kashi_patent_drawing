@@ -24,7 +24,7 @@ const footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         {/* Logo & Tagline */}
         <div className="flex flex-col items-start">
-          <Image src="/assets/logo/logo.png" alt="Company Logo" width={56} height={56} className="h-14 mb-4" />
+          <Image src="/assets/logo/logo.png" alt="Company Logo" width={196} height={56} className="h-14 mb-4" />
           <span className="text-lg font-semibold mb-2">Let’s Make Magic Together ✨</span>
           <div className="flex gap-4 mt-2">
             <Link href="https://facebook.com" className="hover:scale-110 transition-transform">
@@ -44,13 +44,11 @@ const footer = () => {
           <h3 className="text-xl font-bold mb-4">Quick Links</h3>
           <ul className="space-y-3">
             <li><Link href="/" className="hover:underline">Home</Link></li>
-            <li><Link href="/about" className="hover:underline">About</Link></li>
-            <li><Link href="/services" className="hover:underline">Services</Link></li>
-            <li><Link href="/contact" className="hover:underline">Contact</Link></li>
-            <li><Link href="/portfolio" className="hover:underline">Portfolio</Link></li>
+            <li><Link href="#project" className="hover:underline">Project</Link></li>
+            <li><Link href="#why" className="hover:underline">About</Link></li>
+            <li><Link href="#services" className="hover:underline">Services</Link></li>
           </ul>
         </div>
-
         {/* Contact Info */}
         <div>
           <h3 className="text-xl font-bold mb-4">Contact Us</h3>
