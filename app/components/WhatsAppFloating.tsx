@@ -13,7 +13,7 @@ const WhatsAppFloating = () => {
   return (
   <div className="fixed bottom-8 right-8 z-50 flex flex-col items-end">
       {showTooltip && (
-        <div className="mb-2 px-4 py-2 bg-gray-800 rounded-lg shadow-lg text-base font-medium animate-fade-in">
+        <div className="mb-2 px-4 py-2 bg-[#128C7E] rounded-lg shadow-lg text-base font-medium animate-fade-in text-white">
           Got a query? Contact now
         </div>
       )}
@@ -21,7 +21,7 @@ const WhatsAppFloating = () => {
         href="https://wa.me/+919934408143?text=Hello%20Kashi%20Patent,%20I%20have%20a%20query%20regarding%20patent%20drawings."
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-green-500 rounded-full shadow-2xl hover:bg-green-600 transition flex items-center justify-center"
+  className="bg-white rounded-full shadow-2xl hover:bg-gray-100 transition flex items-center justify-center"
         aria-label="Contact on WhatsApp"
         style={{ width: 64, height: 64 }}
       >
